@@ -21,9 +21,9 @@ Welcome to my personal portfolio! This is a professional and responsive web port
 ```
 📦 Portfolio
  ┣ 📂 assets
- ┣ 📜 portfolio.html
- ┣ 📜 portfolio.css
- ┣ 📜 portfolio.js
+ ┣ 📜 index.html
+ ┣ 📜 index.css
+ ┣ 📜 index.js
  ┣ 📜 README.md
 ```
 ## 🔧 Installation & Usage
