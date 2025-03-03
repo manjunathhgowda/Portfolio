@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script defer src="portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body class="light-mode">
+    
+    <header>
+        <nav>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <span class="logo-text">{"Portfolio"}</span>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="#about">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section-container">
+            <div class="profile-container">
+                <div class="profile-image-container">
+                    <img src="assets/profile.jpg" alt="Profile Picture" class="profile-image">
+                </div>
+                <div class="about-content">
+                    <h1 class="glitch-text">Hello, I'm Manjunatha H B</h1>
+                    <b><p class="typewriter">Tech Enthusiast & Developer </p></b>
+                    <p class="about-description">Passionate about creating innovative solutions and exploring new technologies.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-me" class="section-container">
+            <div class="about-me-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-me-content">
+                    <div class="about-me-text">
+                        <p class="about-me-description">
+                            MCA student at Acharya Institute of Technology, Bangalore, with a strong foundation in programming and problem
+                            solving. Good at teamwork and communication, Eager to apply my skills and gain real-world experience in the tech 
+                            industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section-container">
+            <h2 class="section-title">Education Journey</h2>
+            <div class="education-map-container">
+                <div id="education-map" class="education-map">
+                    <div class="road"></div>
+                    <div class="milestone" data-education="SSLC">
+                        <i class="fa-solid fa-school"></i>
+                        <div class="milestone-data">
+                            <center><h3>SSLC</h3></center><hr>
+                            <p>Govt.High School,Nittur</p>
+                            <p>2017 - 2018</p>
+                            <p>Percentage: 91.68 %</p>
+                        </div>
+                    </div>
+                    <div class="milestone" data-education="PUC">
+                        <i class="fa-solid fa-flask"></i>
+                        <div class="milestone-data">
+                            <center><h3>Pre University <br> 12<sup>th</sup>-PCMCs</h3></center><hr>
+                            <p>Govt.PU College,Kundapura,Udupi</p>
+                            <p>2019 - 2020</p>
+                            <p>Percentage: 86.33 %</p>
+                        </div>
+                    </div>
+                    <div class="milestone" data-education="BCA">
+                        <i class="fas fa-mouse"></i>
+                        <div class="milestone-data">
+                            <center><h3>Bachelor of Computer Application</h3></center><hr>
+                            <p>GFGC & Centre for PG Studies,Tenkanidiyoor,Udupi</p>
+                            <p>2020 - 2023</p>
+                            <p>CGPA: 8.59</p>
+                        </div>
+                    </div>
+                    <div class="milestone" data-education="MCA">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="milestone-data">
+                            <center><h3>Master of Computer Application</h3></center><hr>
+                            <p>Acharya Institute of Technology,Bangalore</p>
+                            <p>2023 - Present</p>
+                            <p>CGPA: 8.52</p>
+                        </div>
+                    </div>
+                    <!-- Add more milestones as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="java">
+                    <i class="fab fa-java"></i>
+                    <span>Java</span>
+                </div>
+                <div class="skill-card" data-skill="Python">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-card" data-skill="C">
+                    <i class="devicon-c-plain"></i>
+                    <span>C</span>
+                </div>
+                <div class="skill-card" data-skill="C#">
+                    <i class="devicon-csharp-plain"></i>
+                    <span>C#</span>
+                </div>
+                <div class="skill-card" data-skill="HTML5">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-card" data-skill="CSS3">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-card" data-skill="JavaScript">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card" data-skill="Bootstrap">
+                    <i class="fab fa-bootstrap"></i>
+                    <span>Bootstrap</span>
+                </div>
+                <div class="skill-card" data-skill="SQL">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="skill-card" data-skill="ASP.NET">
+                    <img src="assets/aspdotnet.png" height="60" width="60">
+                    <span>ASP.NET</span>
+                </div>
+                <div class="skill-card" data-skill="MySQL">
+                    <i class="devicon-mysql-plain"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-card" data-skill="Microsoft SQL Server">
+                    <img src="assets/sql-server.png" height="60" width="60">
+                    <span>Microsoft SQL Server</span>
+                </div>
+                <!-- <div class="skill-card" data-skill="PyCharm">
+                    <i class="devicon-pycharm-plain"></i>
+                    <span>PyCharm</span>
+                </div>
+                <div class="skill-card" data-skill="Jupyter Notebook">
+                    <i class="devicon-jupyter-plain"></i>
+                    <span>Jupyter Notebook</span>
+                </div>
+                <div class="skill-card" data-skill="VS Code">
+                    <i class="devicon-vscode-plain"></i>
+                    <span>VS Code</span>
+                </div>
+                <div class="skill-card" data-skill="Eclipse">
+                    <i class="devicon-eclipse-plain"></i>
+                    <span>Eclipse</span>
+                </div> -->
+                <div class="skill-card" data-skill="Git">
+                    <i class="devicon-git-plain"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill-card" data-skill="GitHub">
+                    <i class="devicon-github-plain"></i>
+                    <span>GitHub</span>
+                </div>
+
+                <!-- Add more skills as needed -->
+            </div>
+        </section>
+
+        <section id="projects" class="section-container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/Local Hire - A Online Labor Hiring Web Application.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-info">
+                        <h3>Local Hire - A Online Labor Hiring Web Application</h3>
+                        <p> "Local Hire," a platform to automate hiring daily wage workers,reducing costs and cutting hiring time. </p>
+                        <div class="project-links">
+                            <a href="https://github.com/manjunathhgowda/LOCALHIRE" class="github-link"><i class="fab fa-github"></i></a>
+                            <!-- <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/PhotoHub - A Photo Search App.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-info">
+                        <h3>PhotoHub - A Photo Search App</h3>
+                        <p>"PhotoHub" is a web application for searching, previewing, and downloading high-quality images from the Unsplash API with a seamless user experience.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/manjunathhgowda/PhotoHub" class="github-link"><i class="fab fa-github"></i></a>
+                            <!-- <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <section id="certifications" class="section-container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certificates-container">
+                <button class="scroll-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="certificates-slider">
+                    <div class="certificate-card">
+                        <img src="assets/udemy Java.jpg" alt="Certificate 1">
+                        <div class="certificate-info">
+                            <h3>Learn Java Masterclass-2024</h3>
+                            <p>Udemy</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="assets/Geekster Certificate for Interactive photo album project.jpg" alt="Certificate 2">
+                        <div class="certificate-info">
+                            <h3>Interactive photo album project-2024</h3>
+                            <p>Geekster</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="assets/Coursera Introduction to Java.jpg" alt="Certificate 2">
+                        <div class="certificate-info">
+                            <h3>Introduction to java-2024</h3>
+                            <p>Coursera</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="assets/simplilearn Introduction to SQL.jpg" alt="Certificate 7">
+                        <div class="certificate-info">
+                            <h3>Introduction to SQL-2024</h3>
+                            <p>Simplilearn</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="assets/sql_basic.jpg" alt="Certificate 3">
+                        <div class="certificate-info">
+                            <h3>SQL Basic-2024</h3>
+                            <p>Hackerrank</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="assets/sql_intermediate.jpg" alt="Certificate 4">
+                        <div class="certificate-info">
+                            <h3>SQL Intermediate-2024</h3>
+                            <p>Hackerrank</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="assets/sql_advanced.jpg" alt="Certificate 5">
+                        <div class="certificate-info">
+                            <h3>SQL Advanced-2024</h3>
+                            <p>Hackerrank</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="assets/simplilearn Python for beginners.jpg" alt="Certificate 7">
+                        <div class="certificate-info">
+                            <h3>Python for beginners-2025</h3>
+                            <p>Simplilearn</p>
+                        </div>
+                    </div>
+                    <!-- Add more certificate cards as needed -->
+                </div>
+                <button class="scroll-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+        
+        <section id="achievements" class="section-container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>National Means-Cum-Merit Scholarship Examination (NMMS) 2015-16</h3>
+                        <p>Successfully qualified in the NMMS examination conducted by DSERT, Karnataka.</p>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Binary Battle -Your Code, Your Legacy 2024</h3>
+                        <p>Secured 3<sup>rd</sup> place in an inter-departmental coding competition held at Acharya Institute of Technology, Bangalore</p>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Smart India Hackathon 2024</h3>
+                        <p>Participated in Internal Smart India Hackathon held at Acharya Institute of Technology, Bangalore</p>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Binary Battle 2.0 - Your Design, Your Legacy 2025</h3>
+                        <p>Secured 1<sup>st</sup> place in an inter-departmental web design competition held at Acharya Institute of Technology, Bangalore</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Include EmailJS Library -->
+        <section id="contact" class="section-container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-wrapper">
+                <!-- Contact Cards -->
+                <div class="contact-cards">
+                    <a href="mailto:manjunathhgowda1432@gmial.com" style="text-decoration: none;">
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Email</h3>
+                                <p>manjunathhgowda1432@gmail.com</p>
+                            </div>
+                        </div>  
+                    </a>
+                    <a href="tel:+919481362456" style="text-decoration: none;">
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Contact</h3>
+                                <p>+91 9481362456</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://maps.app.goo.gl/7vDtfbp1keJ2VFL6A" style="text-decoration: none;">
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Address</h3>
+                                </a><p>Bangalore,Karnataka,India</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        
+                <!-- Contact Form -->
+                <div class="contact-container">
+                    <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="cabee0a5-0e77-4b3e-9ad9-e72ebb6e13db">
+                        <input type="hidden" name="subject" value="📩 New Contact Form Submission">
+                        <input type="hidden" name="replyto" value="email">
+                        <input type="hidden" id="formatted-message" name="message">
+        
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required ></textarea>
+                            <label for="message">Message</label>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        <p id="form-response"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+<!-- Link to the updated JavaScript file -->
+
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://drive.google.com/file/d/1UzFPbBNjH4aCixumd-G7q2PK073PcwMW/view?usp=sharing" class="social-link" title="Resume">
+                <i class="fas fa-file-pdf"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/manjunatha-h-b-/" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/manjunathhgowda" class="social-link" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.hackerrank.com/dashboard" class="social-link" title="HackerRank">
+                <i class="fab fa-hackerrank"></i>
+            </a>
+            <a href="https://www.instagram.com/mxnjx_002?igsh=MWY1MTZlcTA5aWUycw==" class="social-link" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com/@manjunatha_h_gowda?si=3zvaoZexabqX6gLi" class="social-link" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://technostorieshub.blogspot.com/" class="social-link" title="Blog">
+                <i class="fab fa-blogger"></i>
+            </a>
+        </div>
+        <br>
+        <p style="color: #fff; text-align: center;">© 2025 Manjunatha H B. All Rights Reserved.</p>
+    </footer>
+    
+        
+        <style>
+        /* Basic error message styling */
+        .error-message {
+            color: red;
+            font-size: 0.875rem;
+            margin-top: 5px;
+        }
+        #form-response {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        </style>
+        
+        
+</body>
+</html>
