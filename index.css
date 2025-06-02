@@ -1041,13 +1041,28 @@ footer {
         gap: 1rem;
     }
     .projects-grid {
-        grid-template-columns: 1fr;  
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
     }
+
+    .project-card {
+        left: 0;
+        position: relative;
+        object-fit: cover;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        width: 100%;
+    }
+
     .project-card img {
-        width:100%;
-        height:110%;
-        object-fit:none;
+        width: 100%;
+        height: auto; /* Changed from 110% to auto for responsiveness */
+        object-fit: cover; /* Changed from none to cover for proper scaling */
     }
+
     .project-info {
         position: absolute;
         bottom: 0;
@@ -1058,23 +1073,18 @@ footer {
         transform: translateY(100%);
         transition: transform var(--transition-speed);
     }
-    .project-card {
-        left: -7%;
-        position: relative;
-        object-fit:cover;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
+
     .project-info h5 {
         object-fit: fill;
         color: white;
         margin-bottom: 0.8rem;
     }
+
     .project-info p {
         color: rgba(255, 255, 255, 0.8);
         font-size: 0.5rem;
     }
+    
     .certificates-slider {
         gap: 1rem; 
     }
