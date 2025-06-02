@@ -1260,7 +1260,9 @@ footer {
         transition: transform var(--transition-speed);
     }
     .project-card {
-        left: -7%;
+        width: 100%;
+        left: 0;
+        
         position: relative;
         object-fit:fill;
         border-radius: 10px;
