@@ -1041,10 +1041,10 @@ footer {
         gap: 1rem;
     }
     .projects-grid {
-    grid-template-columns: 1fr;
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
+        grid-template-columns: 1fr;
+        display: grid;
+        gap: 1rem;
+        padding: 1rem;
     }
 
     .project-card {
